@@ -1,10 +1,11 @@
 
+
 Algorithm:
 Traversing the votes is done by Tree implementation.
 Each node has it's own weight.
 
 Weight of the Level1 's node is important for traversing.
-
+Note:Level 0 has root with id = 0(Root node has id equal to zero.)
 
 
 
@@ -16,13 +17,11 @@ Firstly,the path of the file should be provided.
 then , the candidates are read from that file and showed on page
 The several votes can be selected by comma deliminator.(ex:2,3,4)
 after typing tally, findWinner method is called.
-FindWinner finds the node(s) with high weight. If more than one node is found,just the first one is assigned for the max weight variable.
-then there is a loop for each nodes(just on the first level of tree) with min weights, for all of them second-level nodes are considered for processing.
+FindWinner finds the node(s) with high weight. If more than one node is found,just the first one is assigned to the max weight variable.
+then there is a loop through each nodes(just on the first level of tree) with min weights, for all of them second-level nodes are considered for processing.
 if next nodes exist in first level, all of it's child append to it, otherwise new node is created under the root.
 
 Findwinner method is called until the candidate with more than half of ballots is found.
-
-Note: Root node has id equal to zero.
 
 
 Running the project:
